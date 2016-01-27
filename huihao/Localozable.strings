@@ -1,0 +1,14 @@
+/* 
+  Localozable.strings
+  huihao
+
+  Created by 张坤 on 15/10/29.
+  Copyright © 2015年 张坤. All rights reserved.
+*/
+
+/* http提示文字 */
+"httpLoadText"="加载中...";
+"noHttpLoadText"="请求数据失败,请检查网络";
+/* 上拉提示文字 */
+"upLoadText"="点击或者下拉加载更多数据";
+"upNODataText"="暂无数据";

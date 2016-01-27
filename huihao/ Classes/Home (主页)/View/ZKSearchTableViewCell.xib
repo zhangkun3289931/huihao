@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZKSearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_history" translatesAutoresizingMaskIntoConstraints="NO" id="Yjv-zC-4Yp">
+                        <rect key="frame" x="20" y="7" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="DIV-Dx-18S"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McZ-et-cfX">
+                        <rect key="frame" x="43" y="6" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q54-8T-a4g" userLabel="line">
+                        <rect key="frame" x="20" y="28" width="280" height="1"/>
+                        <color key="backgroundColor" red="0.90479008838383834" green="0.90479008838383834" blue="0.90479008838383834" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hhG-z8-BPr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yjv-zC-4Yp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="2cF-qe-lZQ"/>
+                    <constraint firstAttribute="trailing" secondItem="q54-8T-a4g" secondAttribute="trailing" constant="20" id="8CT-LG-PyZ"/>
+                    <constraint firstItem="McZ-et-cfX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="8l9-Vb-hIe"/>
+                    <constraint firstItem="q54-8T-a4g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="INi-dC-5Ej"/>
+                    <constraint firstAttribute="bottom" secondItem="Yjv-zC-4Yp" secondAttribute="bottom" constant="7" id="Zm5-Fg-LAj"/>
+                    <constraint firstItem="McZ-et-cfX" firstAttribute="leading" secondItem="Yjv-zC-4Yp" secondAttribute="trailing" constant="8" id="eqG-2J-gJF"/>
+                    <constraint firstAttribute="bottom" secondItem="q54-8T-a4g" secondAttribute="bottom" id="iDB-pm-efr"/>
+                    <constraint firstItem="Yjv-zC-4Yp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mHQ-6e-h0z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="line" destination="q54-8T-a4g" id="qe0-Qy-LJ7"/>
+                <outlet property="orderByText" destination="McZ-et-cfX" id="ovo-RI-Bv5"/>
+                <outlet property="orderImage" destination="Yjv-zC-4Yp" id="Oqo-i5-5Sa"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="106"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="search_history" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZKHotSearchNewViewController">
+            <connections>
+                <outlet property="claerHeatoryRecordBTN" destination="Ikj-PX-Azb" id="Btk-Nh-J0x"/>
+                <outlet property="tableView" destination="r9g-Je-NnV" id="i7v-lJ-tAA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJH-wl-6kW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                    <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="05p-sr-Gr3"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9g-Je-NnV">
+                    <rect key="frame" x="0.0" y="22" width="320" height="458"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ikj-PX-Azb">
+                        <rect key="frame" x="0.0" y="423" width="320" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.81912878787878785" green="0.81912878787878785" blue="0.81912878787878785" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="清除历史记录" image="delete_pic">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="claerHeatoryRecordClick:" destination="-1" eventType="touchUpInside" id="glV-Ko-iXu"/>
+                        </connections>
+                    </button>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pUt-Bg-g8n"/>
+                        <outlet property="delegate" destination="-1" id="krb-cn-5I9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MJH-wl-6kW" secondAttribute="trailing" id="EJI-uT-6xG"/>
+                <constraint firstAttribute="trailing" secondItem="r9g-Je-NnV" secondAttribute="trailing" id="RsO-4b-gLZ"/>
+                <constraint firstItem="MJH-wl-6kW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X60-OP-AY1"/>
+                <constraint firstItem="MJH-wl-6kW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XFA-LC-z3I"/>
+                <constraint firstItem="r9g-Je-NnV" firstAttribute="top" secondItem="MJH-wl-6kW" secondAttribute="bottom" id="lnU-1u-aK6"/>
+                <constraint firstItem="r9g-Je-NnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v1d-Uv-uUw"/>
+                <constraint firstAttribute="bottom" secondItem="r9g-Je-NnV" secondAttribute="bottom" id="zlQ-O9-FDy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-50" y="335"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_pic" width="20" height="20"/>
+    </resources>
+</document>

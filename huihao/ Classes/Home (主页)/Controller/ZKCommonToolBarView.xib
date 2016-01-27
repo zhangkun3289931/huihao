@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZKCommonToolBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-e2-CJw">
+                    <rect key="frame" x="0.0" y="1" width="320" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkL-vN-87m" customClass="ZKCommentButton">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="送锦旗" image="Icon_Semantics@2x" backgroundImage="shouye_shaixuan_center_selected_bg"/>
+                            <connections>
+                                <action selector="commonToolBarAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="8bO-Sy-t88"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuV-AM-25O" customClass="ZKCommentButton">
+                            <rect key="frame" x="107" y="0.0" width="106" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="关注" image="send_fance" backgroundImage="shouye_shaixuan_center_selected_bg"/>
+                            <state key="disabled" title="已关注"/>
+                            <connections>
+                                <action selector="commonToolBarAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QxO-5b-kZ1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-yB-RoC" customClass="ZKCommentButton">
+                            <rect key="frame" x="214" y="0.0" width="106" height="43"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="去评价" image="IconSemantics" backgroundImage="shouye_shaixuan_center_selected_bg"/>
+                            <connections>
+                                <action selector="commonToolBarAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="K1a-wh-7Sr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dzr-e2-CJw" secondAttribute="bottom" id="2kO-KT-Da0"/>
+                <constraint firstItem="dzr-e2-CJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="ghP-HM-3rU"/>
+                <constraint firstAttribute="trailing" secondItem="dzr-e2-CJw" secondAttribute="trailing" id="j8z-r7-afO"/>
+                <constraint firstItem="dzr-e2-CJw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nBf-jX-i5T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="attentionBtn" destination="DuV-AM-25O" id="nSI-5Q-Pfs"/>
+                <outlet property="stackViewF" destination="dzr-e2-CJw" id="y7A-t5-1gF"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IconSemantics" width="27" height="27"/>
+        <image name="Icon_Semantics@2x" width="27" height="27"/>
+        <image name="send_fance" width="27" height="27"/>
+        <image name="shouye_shaixuan_center_selected_bg" width="75" height="24"/>
+    </resources>
+</document>

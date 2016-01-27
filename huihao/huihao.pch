@@ -1,0 +1,75 @@
+//
+//  huihao.pch
+//  huihao
+//
+//  Created by 张坤 on 15/9/14.
+//  Copyright (c) 2015年 张坤. All rights reserved.
+//
+
+#ifndef huihao_huihao_pch
+#define huihao_huihao_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIButton+ZKExtaion.h"
+#import "UIBarButtonItem+ZKExtaion.h"
+#import "ZKConst.h"
+#import "NSString+Extension.h"
+#import "MBProgressHUD+MJ.h"
+#import "ZKUserTool.h"
+#import "ZKHTTPTool.h"
+#import "UIImageView+WebCache.h"
+#import "UITableView+ZKExtension.h"
+#import "ZKCommonTools.h"
+
+#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+
+#define ZKRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:255/255.0]
+#define ZKColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:255/255.0]
+
+#define ShenLVColor ZKColor(137, 153, 234)
+#define QianLVColor ZKColor(244,247,253)
+#define QianIconBorderLVColor ZKColor(228,234,253)
+#define ShenFenColor ZKColor(168, 75, 217)
+#define LVColor ZKColor(0, 196, 46)
+#define QianFenColor ZKColor(251, 232, 231)
+#define TabelCellLineQianHuiColor ZKColor(228, 229, 230)
+#define BorderColor ZKColor(254, 133, 163)
+#define HuihaoBG ZKColor(240, 240, 240)
+#define HuihaoRedBG ZKColor(215, 86, 111)
+#define HuihaoTextColor ZKColor(108, 108, 108)
+#define HuihaoBingTextColor ZKColor(68, 68, 68)
+#define TabBottomTextColor ZKColor(158, 158, 158)
+#define TabBottomTextSelectColor ZKColor(42, 143, 225)
+
+#define ImageBorderWidth 2
+
+#define UIScerrenHeight  self.view.bounds.size.height
+#define UIScerrenWidth  self.view.bounds.size.width
+#define LoaderString(text) NSLocalizedStringFromTable((text),@"Localozable",nil)
+
+
+
+//bing cell
+#define zkMarginTop 0
+#define zkMarginLeft 0
+#define zkMarginPaddingTop 4
+#define zkImagePaddingTop 10
+#define zkMarginContentLeft 15
+#define zkFont [UIFont systemFontOfSize:13]
+
+#define zkTitleFont [UIFont systemFontOfSize:13]
+#define zkUserNameFont [UIFont systemFontOfSize:8]
+#define zkTimeFont [UIFont systemFontOfSize:10]
+#define zkZhanFont [UIFont systemFontOfSize:13]
+#define zkMarginContentIconWH 50
+#define zkMarginContentNameH 18
+#define zkMarginContentNameW 200
+#define zkMarginTitleNameW 100
+#define zkTextFileW 115
+#define zkContentW 205
+#define zkLineHeight 1
+
+
+#endif

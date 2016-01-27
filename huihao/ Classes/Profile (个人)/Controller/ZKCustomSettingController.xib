@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZKCustomSettingController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zn-c8-hJm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本号：1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftt-94-fbQ">
+                            <rect key="frame" x="89" y="23" width="70" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应用介绍" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cba-s2-EBx">
+                            <rect key="frame" x="89" y="44" width="48" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cba-s2-EBx" firstAttribute="top" secondItem="ftt-94-fbQ" secondAttribute="bottom" constant="5" id="BKK-j7-PgX"/>
+                        <constraint firstItem="ftt-94-fbQ" firstAttribute="leading" secondItem="4Zn-c8-hJm" secondAttribute="leading" constant="89" id="IgI-Cf-qXX"/>
+                        <constraint firstAttribute="height" constant="100" id="YmE-Ml-dIy"/>
+                        <constraint firstItem="cba-s2-EBx" firstAttribute="leading" secondItem="4Zn-c8-hJm" secondAttribute="leading" constant="89" id="mPu-bO-WVS"/>
+                        <constraint firstItem="ftt-94-fbQ" firstAttribute="top" secondItem="4Zn-c8-hJm" secondAttribute="top" constant="23" id="ycE-UM-V9l"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-i0-kFY" customClass="ZKRedioButton">
+                    <rect key="frame" x="10" y="549" width="355" height="44"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.47843137250000001" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7PU-Rq-5ZZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="修改密码"/>
+                    <connections>
+                        <action selector="updatePwd:" destination="-1" eventType="touchUpInside" id="Ba2-88-5qa"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-MX-S0m">
+                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="MEj-8c-ESc"/>
+                        <constraint firstAttribute="height" constant="70" id="Mbl-f2-V9X"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iT-HB-cfL" customClass="ZKRedioButton">
+                    <rect key="frame" x="10" y="603" width="355" height="44"/>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.47843137250000001" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ahl-A4-KU3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="退出登录"/>
+                    <connections>
+                        <action selector="lorgetBtn:" destination="-1" eventType="touchUpInside" id="3Am-Ia-7Sm"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="气味会滴啊HD声卡话费卡时间发货速度快接啊回复1气味会滴啊HD声卡话费卡时间发货速度快接啊回复1气味会滴啊HD声卡话费卡时间发货速度快接啊回复1气费卡时间发货速度快接啊回复1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8oR-gh-EhY">
+                    <rect key="frame" x="0.0" y="110" width="375" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="zPv-xP-RW3"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="0iT-HB-cfL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6xu-iE-9x0"/>
+                <constraint firstAttribute="trailing" secondItem="8oR-gh-EhY" secondAttribute="trailing" id="7aP-Dd-0bH"/>
+                <constraint firstItem="4Zn-c8-hJm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Eq-Eo-aa6"/>
+                <constraint firstItem="8oR-gh-EhY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DUG-N3-8JO"/>
+                <constraint firstAttribute="bottom" secondItem="0iT-HB-cfL" secondAttribute="bottom" constant="20" id="ESR-4A-ZT9"/>
+                <constraint firstItem="4Zn-c8-hJm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kys-33-KgK"/>
+                <constraint firstItem="SSd-i0-kFY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="N98-PQ-ACE"/>
+                <constraint firstItem="YzO-MX-S0m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="NB7-eW-5CM"/>
+                <constraint firstItem="YzO-MX-S0m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="NcF-C8-j4U"/>
+                <constraint firstItem="8oR-gh-EhY" firstAttribute="top" secondItem="4Zn-c8-hJm" secondAttribute="bottom" constant="10" id="P9G-ns-37s"/>
+                <constraint firstAttribute="trailing" secondItem="SSd-i0-kFY" secondAttribute="trailing" constant="10" id="eWO-mB-4Zl"/>
+                <constraint firstItem="0iT-HB-cfL" firstAttribute="top" secondItem="SSd-i0-kFY" secondAttribute="bottom" constant="10" id="l6f-jO-VF3"/>
+                <constraint firstAttribute="trailing" secondItem="0iT-HB-cfL" secondAttribute="trailing" constant="10" id="sZG-DO-HjD"/>
+                <constraint firstAttribute="trailing" secondItem="4Zn-c8-hJm" secondAttribute="trailing" id="vAB-in-oJC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="-42.5" y="102.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="app_icon" width="100" height="100"/>
+    </resources>
+</document>

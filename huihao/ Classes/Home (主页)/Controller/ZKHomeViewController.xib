@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZKHomeViewController">
+            <connections>
+                <outlet property="addDoctorOrDeparment" destination="Kh6-eN-mkh" id="t1y-wf-t7N"/>
+                <outlet property="dropMenuView" destination="sVS-U5-6VU" id="CaI-u7-3b3"/>
+                <outlet property="footView" destination="Czj-lO-VYb" id="OMt-1U-bY7"/>
+                <outlet property="tableView" destination="kx9-sA-9md" id="r87-cF-Gkk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Uhu-3f-O5Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVS-U5-6VU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4O1-vy-hua"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kx9-sA-9md">
+                    <rect key="frame" x="0.0" y="35" width="320" height="445"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="Czj-lO-VYb">
+                        <rect key="frame" x="0.0" y="295" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_add_doctorAndDepartment" translatesAutoresizingMaskIntoConstraints="NO" id="tQg-uz-wFf">
+                                <rect key="frame" x="110" y="8" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="754-g7-eIM"/>
+                                    <constraint firstAttribute="height" constant="100" id="N34-8K-eyg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh6-eN-mkh">
+                                <rect key="frame" x="110" y="8" width="100" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="BId-mr-PFm"/>
+                                    <constraint firstAttribute="width" constant="100" id="kkv-vL-cKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <state key="normal" title="添加科室">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addDoctorOrDeparmentClick:" destination="-1" eventType="touchUpInside" id="RLv-Fk-Le5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tQg-uz-wFf" firstAttribute="centerX" secondItem="Czj-lO-VYb" secondAttribute="centerX" id="8df-O1-9cv"/>
+                            <constraint firstItem="tQg-uz-wFf" firstAttribute="top" secondItem="Czj-lO-VYb" secondAttribute="top" constant="8" id="bkt-sj-sc1"/>
+                            <constraint firstItem="Kh6-eN-mkh" firstAttribute="top" secondItem="Czj-lO-VYb" secondAttribute="top" constant="8" id="ig8-ft-1s0"/>
+                            <constraint firstItem="Kh6-eN-mkh" firstAttribute="centerX" secondItem="Czj-lO-VYb" secondAttribute="centerX" id="pG4-5i-spp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3E0-wG-NTm"/>
+                        <outlet property="delegate" destination="-1" id="ZKM-kO-uvP"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sVS-U5-6VU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="70X-Ol-byx"/>
+                <constraint firstItem="kx9-sA-9md" firstAttribute="top" secondItem="sVS-U5-6VU" secondAttribute="bottom" id="ElZ-nU-YMo"/>
+                <constraint firstItem="sVS-U5-6VU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IQl-O0-wDf"/>
+                <constraint firstAttribute="trailing" secondItem="sVS-U5-6VU" secondAttribute="trailing" id="NRv-dz-muL"/>
+                <constraint firstItem="kx9-sA-9md" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g2K-nj-NYk"/>
+                <constraint firstAttribute="bottom" secondItem="kx9-sA-9md" secondAttribute="bottom" id="m3n-FY-o1l"/>
+                <constraint firstAttribute="trailing" secondItem="kx9-sA-9md" secondAttribute="trailing" id="vnR-ML-Voq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="254" y="271"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_add_doctorAndDepartment" width="100" height="100"/>
+    </resources>
+</document>

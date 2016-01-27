@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZKhongbaoViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013-2-12 22:27:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTw-Bf-B2O">
+                        <rect key="frame" x="196" y="0.0" width="114" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-Fi-94q">
+                        <rect key="frame" x="134" y="12" width="53" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="80d-x2-0LO"/>
+                            <constraint firstAttribute="height" constant="20" id="emQ-QB-CuL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.078055465919999997" blue="0.075085791329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_wallet" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-aA-rRv">
+                        <rect key="frame" x="10" y="0.0" width="19" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="QNQ-fJ-Xkf"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-Lm-O2n" userLabel="line">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bGN-x4-6am"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0b0-aA-rRv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1CS-RQ-NL8"/>
+                    <constraint firstAttribute="trailing" secondItem="DwC-Lm-O2n" secondAttribute="trailing" id="4EG-Nf-Xm4"/>
+                    <constraint firstItem="oTw-Bf-B2O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NQz-58-RW5"/>
+                    <constraint firstAttribute="bottom" secondItem="0b0-aA-rRv" secondAttribute="bottom" id="Nmd-ax-UtT"/>
+                    <constraint firstItem="d2W-Fi-94q" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XuR-rb-ccH"/>
+                    <constraint firstItem="0b0-aA-rRv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YUB-6I-gok"/>
+                    <constraint firstAttribute="bottom" secondItem="oTw-Bf-B2O" secondAttribute="bottom" id="chy-UN-8tY"/>
+                    <constraint firstAttribute="bottom" secondItem="DwC-Lm-O2n" secondAttribute="bottom" id="jP7-4e-XQ6"/>
+                    <constraint firstItem="d2W-Fi-94q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ryg-Jz-Wjy"/>
+                    <constraint firstAttribute="trailing" secondItem="oTw-Bf-B2O" secondAttribute="trailing" constant="10" id="t6Z-UY-Gjx"/>
+                    <constraint firstItem="DwC-Lm-O2n" firstAttribute="leading" secondItem="0b0-aA-rRv" secondAttribute="trailing" constant="-29" id="t8R-DJ-S8Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hongbaoMoney" destination="d2W-Fi-94q" id="dNH-su-4U3"/>
+                <outlet property="hongbaoTime" destination="oTw-Bf-B2O" id="DLx-Uc-7aC"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="46"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account_wallet" width="20" height="20"/>
+    </resources>
+</document>
